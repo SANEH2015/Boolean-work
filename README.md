@@ -5,11 +5,11 @@ This app have boolean exercises
 ## Run Locally
 Clone the project
 ```bash
-  git clone https://github.com/Amniei/Shopping-List.git
+  https://github.com/SANEH2015/Boolean-work.git
 ```
 Go to the project directory
 ```bash
-  cd Shopping-List
+  cd boolean
 ```
 Install dependencies
 ```bash

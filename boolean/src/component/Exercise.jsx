@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from './Card'
 import Card2 from './Card2'
+import Card3 from './Card3'
 
 
 export default function Exercise() {
@@ -26,6 +27,7 @@ export default function Exercise() {
     <div style={{display:"flex"}}>
     <Card/>
     <Card2/>
+    <Card3/>
 
     </div>
    

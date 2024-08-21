@@ -22,7 +22,7 @@ export default function Card() {
   };
 
   return (
-    <div className="w3-card-4" style={{ width: "30%", margin: '10px' }}>
+    <div className="w3-card-4" style={{ width: "30%", margin: '10px', }}>
       <header className="w3-container w3-blue">
         <h1>What is the biggest number?</h1>
       </header>
@@ -74,7 +74,7 @@ export default function Card() {
         </form>
       </div>
 
-      <footer className="w3-container w3-gray">
+      <footer className="w3-container w3-gray" style={{ marginTop: "64px" }}>
         <h5>Output: {result}</h5>
       </footer>
     </div>

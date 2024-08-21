@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet,  } from "react-router-dom";
 import Navigation from '../component/navigation';
-import Fotter from '../component/fotter';
+import Footer from '../component/footer';
 
 export default function Layout() {
   return (
@@ -9,7 +9,7 @@ export default function Layout() {
       <>
       <Navigation/>
       
-     <Fotter/>
+     <Footer/>
       <Outlet />
     </> 
     </div>

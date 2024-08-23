@@ -7,7 +7,7 @@ export default function MoviesPage() {
      
   return (
     <div style={{display:"grid",gridTemplateColumns:"repeat(3,0fr)",justifyContent:"center"}}>
-    { Movies.map((movie)=>(<MoviesCard key={movie} movie={movie}/>))}
+    { Movies.map((movie)=>(<MoviesCard key={movie.id} movie={movie}/>))}
     </div>
   )
 }

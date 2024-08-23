@@ -1,36 +1,51 @@
 import React from 'react'
 import movies from '../assets/movies'
+import { Link, useParams } from 'react-router-dom'
+
+
+
 export default function MovieVeiw() {
+  const{id}=useParams()
+console.log("moviesView",id)
   return (
     <>
-      <h1>  {movies[0].title} </h1>
-     <div
+    
+      <div
+      style={{
+        width: '100%',
+        height:"800px",
+        margin: '20px',
+        padding: '20px',
+        border: '1px solid #ddd',
+        borderRadius: '10px',
+        boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
+        display:"flex"
+      }}
+    >
+      <div>
+      <img
+        src={movies[id].imageUrl}
+        alt="Movie Poster"
+        style={{
+          width: '100%',
+          height: '700px',
+          borderRadius: '10px 10px 0 0',
+          objectFit: 'cover',
+        }}
+      />
+      </div>
+    <div style={{margin:"20px"}}>
+    <h2 style={{ fontSize: '20px', margin: '10px 0',fontWeight:"bold" }}>{movies[id].title}</h2>
+      <h4 style={{ fontSize: '14px', margin: '10px 0',fontWeight:"bold" }}>Director:  {movies[id].director}</h4>
+      <p style={{ fontSize: '14px', margin: '10px 0' }}>{movies[id].description}</p>
+      <h4 style={{ fontSize: '14px', margin: '10px 0',fontWeight:"bold" }}>Year:  {movies[id].year}</h4>
+      <h4 style={{ fontSize: '14px', margin: '10px 0',fontWeight:"bold" }}>Genre:  {movies[id].genre}</h4>
+      <h4 style={{ fontSize: '14px', margin: '10px 0',fontWeight:"bold" }}>Rating:  {movies[id].rating}</h4>
 
-    style={{
-     
-      width:"100%",
-      height:"500px",
-      backgroundImage:`url(${require(movies[0].imageUrl)})`,
-      backgroundRepeat:"no-repeat",
-      backgroundSize:"cover",
-      alignContent:"center",
-      justifyContent:"center",
-      display:"flex",
-     
-    
-    }}>
-       
-    
-      
+     <Link to={".."} > <button style={{padding:"10px"}}>back to movies</button></Link>
     </div>
-   <div style={{margin:"20px",fontWeight:"bold"}}>
-   <h3>Director:{movies[0].director}</h3>
-    <h3>{movies[0].description}</h3>
-    <h3>Genre:{movies[0].genre}</h3>
-    <p>Year:{movies[0].year}</p>
-    <p>Rating:{movies[0].rating}</p>
-    
-    </div> 
+     
+    </div>
     </>
      
   )

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function MoviesCard({movie}) {
   return (
@@ -26,7 +27,7 @@ export default function MoviesCard({movie}) {
       <h4 style={{ fontSize: '14px', margin: '10px 0' }}>{movie.director}</h4>
       <p style={{ fontSize: '14px', margin: '10px 0' }}>{movie.description}</p>
 
-      <button>veiw more</button>
+       <Link to={`${movie.id}`}><button>veiw more</button></Link>
     </div>
   );
 }

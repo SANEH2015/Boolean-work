@@ -9,8 +9,8 @@ export default function Navigation() {
       <Link className="w3-bar-item w3-button" to="/Exercise">Exercise</Link>
       <Link className="w3-bar-item w3-button" to="/Contact">Contact</Link>
       <Link className="w3-bar-item w3-button" to="/Movies">Movies</Link>
-      <Link className="w3-bar-item w3-button" to="/Movies1">MovieVeiw</Link>
-      <Link className="w3-bar-item w3-button" to="/Nopage">Nopage</Link>
+     
+      
  
 </div>
     </div>

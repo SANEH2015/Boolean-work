@@ -26,9 +26,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="TrafficLight" element={<TrafficLight />} />
           <Route path="Exercise" element={<Exercise />} />
-          <Route path="Movies" element={<Movies  />} />
+          <Route path="Movies"  >
+          <Route index element={<Movies/>} />
+          <Route  path=":id" element={<MovieVeiw/>}/>
+          </Route>
           <Route path="Contact" element={<Contact />} />
-          <Route path="Movies1" element={<MovieVeiw  />} />
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>
